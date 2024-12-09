@@ -198,5 +198,5 @@ SOL:
 
 SOL:
 
-[Ejercicio 8](https://sqlbolt.com/lesson/select_queries_with_nulls)
+[Ejercicio 9](https://sqlbolt.com/lesson/select_queries_with_expressions)
 
