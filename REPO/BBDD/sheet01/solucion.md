@@ -188,15 +188,15 @@ Excercise 9 — Tasks
 
 **List all movies and their combined sales in millions of dollars** 
 
-SOL:
+SOL: `SELECT title, (domestic_sales + international_sales)/1000000 AS sales FROM boxoffice JOIN movies ON boxoffice.movie_id = movies.id;`
 
 **List all movies and their ratings in percent**
 
-SOL:
+SOL: `SELECT title, rating*10 AS rating FROM boxoffice JOIN movies ON boxoffice.movie_id = movies.id;`
 
 **List all movies that were released on even number years**
 
-SOL:
+SOL: `SELECT title, year FROM movies WHERE year%2 = 0;`
 
 [Ejercicio 9](https://sqlbolt.com/lesson/select_queries_with_expressions)
 
