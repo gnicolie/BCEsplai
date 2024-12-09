@@ -181,3 +181,22 @@ SOL: `SELECT * FROM buildings LEFT JOIN employees ON building_name = building WH
 
 [Ejercicio 8](https://sqlbolt.com/lesson/select_queries_with_nulls)
 
+## SQL Lesson 9: Queries with expressions
+
+
+Excercise 9 — Tasks
+
+**List all movies and their combined sales in millions of dollars** 
+
+SOL:
+
+**List all movies and their ratings in percent**
+
+SOL:
+
+**List all movies that were released on even number years**
+
+SOL:
+
+[Ejercicio 8](https://sqlbolt.com/lesson/select_queries_with_nulls)
+
