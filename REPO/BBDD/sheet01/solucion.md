@@ -207,14 +207,16 @@ Excercise 10 — Tasks
 
 **Find the longest time that an employee has been at the studio** 
 
-SOL: `SELECT title, (domestic_sales + international_sales)/1000000 AS sales FROM boxoffice JOIN movies ON boxoffice.movie_id = movies.id;`
+SOL: `SELECT MAX(years_employed) as Max_years_employed FROM employees;`
 
 **For each role, find the average number of years employed by employees in that role**
 
-SOL: `SELECT title, rating*10 AS rating FROM boxoffice JOIN movies ON boxoffice.movie_id = movies.id;`
+SOL: `SELECT building, SUM(years_employed) as Total_years_employed FROM employees GROUP BY building;`
 
 **Find the total number of employee years worked in each building**
 
-SOL: `SELECT title, year FROM movies WHERE year%2 = 0;`
+SOL: `SELECT building, SUM(years_employed) AS total_number_of_years_employeed FROM employees GROUP BY building;`
 
 [Ejercicio 10](https://sqlbolt.com/lesson/select_queries_with_aggregates)
+
+
