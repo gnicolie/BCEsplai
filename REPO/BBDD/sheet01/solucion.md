@@ -219,4 +219,23 @@ SOL: `SELECT building, SUM(years_employed) AS total_number_of_years_employeed FR
 
 [Ejercicio 10](https://sqlbolt.com/lesson/select_queries_with_aggregates)
 
+## SQL Lesson 11: Queries with aggregates (Pt. 2)
+
+
+Excercise 11 — Tasks
+
+**Find the number of Artists in the studio (without a HAVING clause)** 
+
+SOL: `SELECT role, COUNT(name) FROM employees WHERE role = "Artist" GROUP BY ROLE;`
+
+**Find the number of Employees of each role in the studio**
+
+SOL: `SELECT role, COUNT(*) as Number_of_artists FROM employees GROUP BY role;`
+
+**Find the total number of years employed by all Engineers**
+
+SOL: `SELECT role, SUM(years_employed) AS total_years_employeed FROM employees WHERE role = "Engineer";`
+
+[Ejercicio 11](https://sqlbolt.com/lesson/select_queries_with_aggregates_pt_2)
+
 
