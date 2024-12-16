@@ -238,4 +238,30 @@ SOL: `SELECT role, SUM(years_employed) AS total_years_employeed FROM employees W
 
 [Ejercicio 11](https://sqlbolt.com/lesson/select_queries_with_aggregates_pt_2)
 
+## SQL Lesson 12: Order of execution of a Query
 
+Excercise 12 — Tasks
+
+**Find the number of movies each director has directed** 
+
+SOL: `SELECT director, COUNT(title) AS N_movies FROM movies GROUP BY director;`
+
+**Find the total domestic and international sales that can be attributed to each director**
+
+SOL: `SELECT director, (SUM(domestic_sales) + SUM(international_sales)) AS total_sales FROM movies JOIN boxoffice ON movies.id=boxoffice.movie_id GROUP BY director;`
+
+[Ejercicio 12](https://sqlbolt.com/lesson/select_queries_order_of_execution)
+
+## SQL Lesson 13: Inserting rows
+
+Excercise 13 — Tasks
+
+**Add the studio's new production, Toy Story 4 to the list of movies (you can use any director)** 
+
+SOL: `SELECT director, COUNT(title) AS N_movies FROM movies GROUP BY director;`
+
+**Toy Story 4 has been released to critical acclaim! It had a rating of 8.7, and made 340 million domestically and 270 million internationally. Add the record to the BoxOffice table.**
+
+SOL: `SELECT director, (SUM(domestic_sales) + SUM(international_sales)) AS total_sales FROM movies JOIN boxoffice ON movies.id=boxoffice.movie_id GROUP BY director;`
+
+[Ejercicio 13](https://sqlbolt.com/lesson/inserting_rows)
